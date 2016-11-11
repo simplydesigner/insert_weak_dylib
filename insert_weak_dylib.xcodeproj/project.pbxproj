@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B7D44A11DD639B1009707F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D44A01DD639B1009707F5 /* main.m */; };
+		2B7D44AC1DD639C2009707F5 /* optool-operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D44A71DD639C2009707F5 /* optool-operations.m */; };
+		2B7D44AD1DD639C2009707F5 /* NSData+Reading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D44A91DD639C2009707F5 /* NSData+Reading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		2B7D449D1DD639B1009707F5 /* insert_weak_dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = insert_weak_dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7D44A01DD639B1009707F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B7D44A71DD639C2009707F5 /* optool-operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "optool-operations.m"; sourceTree = "<group>"; };
+		2B7D44A81DD639C2009707F5 /* NSData+Reading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Reading.h"; sourceTree = "<group>"; };
+		2B7D44A91DD639C2009707F5 /* NSData+Reading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Reading.m"; sourceTree = "<group>"; };
+		2B7D44AA1DD639C2009707F5 /* optool-defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "optool-defines.h"; sourceTree = "<group>"; };
+		2B7D44AB1DD639C2009707F5 /* optool-operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "optool-operations.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				2B7D44A01DD639B1009707F5 /* main.m */,
+				2B7D44AB1DD639C2009707F5 /* optool-operations.h */,
+				2B7D44A71DD639C2009707F5 /* optool-operations.m */,
+				2B7D44A81DD639C2009707F5 /* NSData+Reading.h */,
+				2B7D44A91DD639C2009707F5 /* NSData+Reading.m */,
+				2B7D44AA1DD639C2009707F5 /* optool-defines.h */,
 			);
 			path = insert_weak_dylib;
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7D44AD1DD639C2009707F5 /* NSData+Reading.m in Sources */,
+				2B7D44AC1DD639C2009707F5 /* optool-operations.m in Sources */,
 				2B7D44A11DD639B1009707F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +230,7 @@
 		2B7D44A51DD639B1009707F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +238,7 @@
 		2B7D44A61DD639B1009707F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
